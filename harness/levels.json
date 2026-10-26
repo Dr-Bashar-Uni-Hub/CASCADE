@@ -1,0 +1,116 @@
+{
+ "_note": "Protocol v0.2. K1 depth levels 1B-32KB (+1MB default) pending pilot batch 3; K2 off/on; K11 added. Rule categories checked against ET Open snapshot 2026-10-19 (sha256 6c051c4c...569b). Rules with 'noalert' (flowbit setters) are never removed.",
+ "K1": {
+  "name": "stream reassembly depth",
+  "kind": "set",
+  "levels": {
+   "0": {
+    "stream.reassembly.depth": "1"
+   },
+   "0.2": {
+    "stream.reassembly.depth": "512"
+   },
+   "0.4": {
+    "stream.reassembly.depth": "2kb"
+   },
+   "0.6": {
+    "stream.reassembly.depth": "8kb"
+   },
+   "0.8": {
+    "stream.reassembly.depth": "32kb"
+   },
+   "1": {
+    "stream.reassembly.depth": "1mb"
+   }
+  }
+ },
+ "K2": {
+  "name": "HTTP parser",
+  "kind": "set",
+  "levels": {
+   "0": {
+    "app-layer.protocols.http.enabled": "no"
+   },
+   "1": {}
+  }
+ },
+ "K3": {
+  "name": "TLS parser",
+  "kind": "set",
+  "levels": {
+   "0": {
+    "app-layer.protocols.tls.enabled": "no"
+   },
+   "1": {}
+  }
+ },
+ "K4": {
+  "name": "DNS parser",
+  "kind": "set",
+  "levels": {
+   "0": {
+    "app-layer.protocols.dns.udp.enabled": "no",
+    "app-layer.protocols.dns.tcp.enabled": "no"
+   },
+   "1": {}
+  }
+ },
+ "K5": {
+  "name": "SSH and FTP parsers",
+  "kind": "set",
+  "levels": {
+   "0": {
+    "app-layer.protocols.ssh.enabled": "no",
+    "app-layer.protocols.ftp.enabled": "no"
+   },
+   "1": {}
+  }
+ },
+ "K6": {
+  "name": "web-attack rules",
+  "kind": "rules",
+  "categories": [
+   "WEB_SERVER",
+   "WEB_SPECIFIC_APPS"
+  ]
+ },
+ "K7": {
+  "name": "scan rules",
+  "kind": "rules",
+  "categories": [
+   "SCAN"
+  ]
+ },
+ "K8": {
+  "name": "exploit rules",
+  "kind": "rules",
+  "categories": [
+   "EXPLOIT"
+  ]
+ },
+ "K9": {
+  "name": "malware and C2 rules",
+  "kind": "rules",
+  "categories": [
+   "MALWARE",
+   "CNC"
+  ]
+ },
+ "K10": {
+  "name": "DoS rules",
+  "kind": "rules",
+  "categories": [
+   "DOS"
+  ]
+ },
+ "K11": {
+  "name": "low-confidence rules",
+  "kind": "rules",
+  "categories": [
+   "INFO",
+   "HUNTING",
+   "DYN_DNS",
+   "JA3"
+  ]
+ }
+}

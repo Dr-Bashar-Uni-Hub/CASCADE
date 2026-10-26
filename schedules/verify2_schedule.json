@@ -1,0 +1,655 @@
+{
+ "protocol": "CASCADE-IDS protocol v1.2 amendment: phase 5b (exploratory)",
+ "order_seed": 20261026,
+ "items": [
+  {
+   "id": "WR01",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "W001",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K2": 0.0,
+    "K3": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V005"
+   ],
+   "remeasures": "V005"
+  },
+  {
+   "id": "W002",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.75,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V010"
+   ],
+   "remeasures": "V010"
+  },
+  {
+   "id": "W003",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K10": 0.25,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V024"
+   ],
+   "remeasures": "V024"
+  },
+  {
+   "id": "W004",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K4": 0.0,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V003"
+   ],
+   "remeasures": "V003"
+  },
+  {
+   "id": "W005",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K2": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V011"
+   ],
+   "remeasures": "V011"
+  },
+  {
+   "id": "W006",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.75,
+    "K9": 0.75,
+    "K10": 0.75,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V017"
+   ],
+   "remeasures": "V017"
+  },
+  {
+   "id": "W007",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "dependency-aware optimum, 5% margin @ 80%"
+   ]
+  },
+  {
+   "id": "W008",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K6": 0.0,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V016"
+   ],
+   "remeasures": "V016"
+  },
+  {
+   "id": "W009",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V015"
+   ],
+   "remeasures": "V015"
+  },
+  {
+   "id": "W010",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K6": 0.0,
+    "K7": 0.0,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K10": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V002"
+   ],
+   "remeasures": "V002"
+  },
+  {
+   "id": "WR02",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "W011",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V023"
+   ],
+   "remeasures": "V023"
+  },
+  {
+   "id": "W012",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V021"
+   ],
+   "remeasures": "V021"
+  },
+  {
+   "id": "W013",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K6": 0.0,
+    "K7": 0.0,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K10": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V006"
+   ],
+   "remeasures": "V006"
+  },
+  {
+   "id": "W014",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V020"
+   ],
+   "remeasures": "V020"
+  },
+  {
+   "id": "W015",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V025"
+   ],
+   "remeasures": "V025"
+  },
+  {
+   "id": "W016",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V013"
+   ],
+   "remeasures": "V013"
+  },
+  {
+   "id": "W017",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K6": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V007"
+   ],
+   "remeasures": "V007"
+  },
+  {
+   "id": "W018",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V008"
+   ],
+   "remeasures": "V008"
+  },
+  {
+   "id": "W019",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V019"
+   ],
+   "remeasures": "V019"
+  },
+  {
+   "id": "W020",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "dependency-aware optimum, 10% margin @ 90%"
+   ]
+  },
+  {
+   "id": "WR03",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "W021",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "dependency-aware optimum, 10% margin @ 80%"
+   ]
+  },
+  {
+   "id": "W022",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.8,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V014"
+   ],
+   "remeasures": "V014"
+  },
+  {
+   "id": "W023",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V009"
+   ],
+   "remeasures": "V009"
+  },
+  {
+   "id": "W024",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V012"
+   ],
+   "remeasures": "V012"
+  },
+  {
+   "id": "W025",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V001"
+   ],
+   "remeasures": "V001"
+  },
+  {
+   "id": "W026",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V018"
+   ],
+   "remeasures": "V018"
+  },
+  {
+   "id": "W027",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V004"
+   ],
+   "remeasures": "V004"
+  },
+  {
+   "id": "W028",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.75,
+    "K9": 0.75,
+    "K10": 0.75,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "re-measure of V022"
+   ],
+   "remeasures": "V022"
+  },
+  {
+   "id": "W029",
+   "type": "config",
+   "phase": "5b",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "dependency-aware optimum, 5% margin @ 70%",
+    "dependency-aware optimum, 10% margin @ 70%"
+   ]
+  }
+ ]
+}

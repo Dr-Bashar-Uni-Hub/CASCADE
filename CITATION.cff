@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below (and the paper, once published)."
+title: "CASCADE: Measuring and Exploiting Component Dependencies to Configure Signature-Based Intrusion Detection under CPU Budgets"
+type: software
+authors:
+  - name: "The CASCADE authors"   # replace with family-names / given-names entries
+repository-code: "https://github.com/Dr-Bashar-Uni-Hub/CASCADE"
+license: MIT
+version: "0.3"
+date-released: "2026-10-26"
