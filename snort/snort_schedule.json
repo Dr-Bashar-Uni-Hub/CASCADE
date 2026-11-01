@@ -1,0 +1,1551 @@
+{
+ "protocol": "CASCADE-IDS protocol v1.4: Snort 3 replication",
+ "engine": "snort",
+ "levels": {
+  "K1": [
+   0,
+   1
+  ],
+  "K2": [
+   0,
+   1
+  ],
+  "K3": [
+   0,
+   1
+  ],
+  "K4": [
+   0,
+   1
+  ],
+  "K5": [
+   0,
+   1
+  ],
+  "K6": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "K7": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "K8": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "K9": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "K10": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ],
+  "K11": [
+   0,
+   0.25,
+   0.5,
+   0.75,
+   1
+  ]
+ },
+ "seeds": {
+  "rule": 20261019,
+  "validation": 20261029,
+  "order": 20261030
+ },
+ "counts": {
+  "phase1": 1,
+  "phase2": 29,
+  "phase3": 55,
+  "phase4": 25,
+  "references": 11
+ },
+ "items": [
+  {
+   "id": "SR01",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC001",
+   "type": "config",
+   "phase": 1,
+   "held_out": false,
+   "levels": {},
+   "rule_seed": 20261019,
+   "extra_cost_reps": 4
+  },
+  {
+   "id": "SC002",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K6": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC003",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K10": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC004",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K8": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC005",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K9": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC006",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC007",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC008",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K6": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC009",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K7": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC010",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K5": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR02",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC011",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K1": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC012",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K10": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC013",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K7": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC014",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K8": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC015",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K11": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC016",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K3": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC017",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K10": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC018",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K7": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC019",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC020",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K4": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR03",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC021",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC022",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K6": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC023",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC024",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K8": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC025",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K2": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC026",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC027",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K7": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC028",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC029",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K6": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC030",
+   "type": "config",
+   "phase": 2,
+   "held_out": false,
+   "levels": {
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR04",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC031",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K9": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC032",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K6": 0,
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC033",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K6": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC034",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K8": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC035",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K5": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC036",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC037",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K5": 0,
+    "K6": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC038",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K4": 0,
+    "K5": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC039",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K6": 0,
+    "K7": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC040",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K7": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR05",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC041",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K7": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC042",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K3": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC043",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K6": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC044",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC045",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K7": 0,
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC046",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC047",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K6": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC048",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K5": 0,
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC049",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K3": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC050",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K4": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR06",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC051",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K5": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC052",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K4": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC053",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K8": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC054",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K4": 0,
+    "K6": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC055",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC056",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K7": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC057",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC058",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K10": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC059",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K4": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC060",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K7": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR07",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC061",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC062",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC063",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K5": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC064",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K9": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC065",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC066",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K7": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC067",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K6": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC068",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K4": 0,
+    "K7": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC069",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K2": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC070",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K7": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR08",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC071",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC072",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K5": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC073",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K5": 0,
+    "K7": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC074",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC075",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K6": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC076",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K4": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC077",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC078",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K5": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC079",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K2": 0,
+    "K4": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC080",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K4": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR09",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC081",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K8": 0,
+    "K9": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC082",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K10": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC083",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K3": 0,
+    "K6": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC084",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K4": 0,
+    "K8": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC085",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K5": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC086",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K5": 0,
+    "K6": 0.75,
+    "K8": 0,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC087",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K3": 0,
+    "K5": 0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.5,
+    "K10": 0.5,
+    "K11": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC088",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K4": 0,
+    "K6": 0.25,
+    "K7": 0.25,
+    "K8": 0.25,
+    "K9": 0,
+    "K10": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC089",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K4": 0,
+    "K5": 0,
+    "K7": 0.5,
+    "K8": 0.75,
+    "K9": 0,
+    "K10": 0.25,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC090",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K3": 0,
+    "K4": 0,
+    "K5": 0,
+    "K6": 0.25,
+    "K7": 0.25,
+    "K10": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR10",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC091",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K3": 0,
+    "K6": 0.75,
+    "K8": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC092",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K3": 0,
+    "K6": 0.75,
+    "K7": 0.25,
+    "K8": 0.25,
+    "K10": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC093",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K5": 0,
+    "K6": 0.5,
+    "K8": 0.75,
+    "K9": 0,
+    "K10": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC094",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0.75,
+    "K9": 0,
+    "K10": 0.5,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC095",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K4": 0,
+    "K7": 0,
+    "K8": 0.25,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC096",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K4": 0,
+    "K6": 0.25,
+    "K8": 0.25,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC097",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K3": 0,
+    "K5": 0,
+    "K6": 0.5,
+    "K10": 0.25,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC098",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K5": 0,
+    "K6": 0.25,
+    "K9": 0,
+    "K10": 0,
+    "K11": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC099",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K4": 0,
+    "K6": 0.25,
+    "K7": 0.25,
+    "K8": 0.75,
+    "K9": 0.5,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC100",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K4": 0,
+    "K6": 0.75,
+    "K7": 0.5,
+    "K8": 0.25,
+    "K9": 0.5,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SR11",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC101",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K3": 0,
+    "K7": 0,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC102",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K4": 0,
+    "K6": 0.5,
+    "K8": 0,
+    "K9": 0.25,
+    "K10": 0,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC103",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K4": 0,
+    "K6": 0.5,
+    "K7": 0,
+    "K8": 0.5,
+    "K9": 0.25,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC104",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K10": 0.25,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC105",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K6": 0.75,
+    "K8": 0.75,
+    "K9": 0.5,
+    "K10": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC106",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K6": 0.75,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC107",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K5": 0,
+    "K7": 0,
+    "K8": 0.25,
+    "K10": 0,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC108",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K2": 0,
+    "K3": 0,
+    "K4": 0,
+    "K5": 0,
+    "K6": 0.5,
+    "K9": 0,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC109",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K3": 0,
+    "K5": 0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0,
+    "K9": 0.5,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC110",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K3": 0,
+    "K5": 0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  }
+ ]
+}

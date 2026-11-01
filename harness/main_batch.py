@@ -56,9 +56,11 @@ class Runner:
         if not os.path.exists(cfg):
             json.dump({"run_id": item["id"], "phase": item.get("phase", "reference"),
                        "levels": item["levels"], "rule_seed": item["rule_seed"]}, open(cfg, "w"))
-        cmd = [sys.executable, os.path.join(HERE, "run_config.py"), "--config", cfg,
+        script = "run_config_snort.py" if a.engine == "snort" else "run_config.py"
+        base_flag = "--base-cfg" if a.engine == "snort" else "--base-yaml"
+        cmd = [sys.executable, os.path.join(HERE, script), "--config", cfg,
                "--pcap", os.path.join(a.pcap_dir, DAYS[day]), "--out", out, "--rule-seed", str(item["rule_seed"]),
-               "--base-yaml", a.base_yaml, "--ruleset", a.ruleset, "--cpu", str(cpu)]
+               base_flag, a.base_yaml, "--ruleset", a.ruleset, "--cpu", str(cpu)]
         cmd += (["--startup-pcap", a.tiny, "--calib-baseline", str(a.calib_baseline)] if cost
                 else ["--no-calibration"])
         for attempt in (1, 2, 3):
@@ -120,14 +122,20 @@ def main():
     ap.add_argument("--runs", default="/data/runs/main")
     ap.add_argument("--pcap-dir", default="/data/pcap")
     ap.add_argument("--labels-dir", default="/data/labels")
-    ap.add_argument("--base-yaml", default="/data/config/base_suricata.yaml")
-    ap.add_argument("--ruleset", default="/data/rules/et-open-2026-10-19.rules")
+    ap.add_argument("--engine", choices=["suricata", "snort"], default="suricata")
+    ap.add_argument("--base-yaml", default=None, help="base configuration (Suricata yaml or Snort lua)")
+    ap.add_argument("--ruleset", default=None)
     ap.add_argument("--tiny", default="/data/config/tiny.pcap")
     ap.add_argument("--detection-cpus", default="1,2,3", help="vCPUs for parallel detection runs")
     ap.add_argument("--cost-cpu", type=int, default=1)
     ap.add_argument("--calib-baseline", type=float, default=4.25)
     ap.add_argument("--until", help="HH:MM; do not start a run that could end after this time")
     a = ap.parse_args()
+    if a.base_yaml is None:
+        a.base_yaml = "/data/config/snort/snort_base.lua" if a.engine == "snort" else "/data/config/base_suricata.yaml"
+    if a.ruleset is None:
+        a.ruleset = ("/data/rules_snort/et_snort3_20261028_clean.rules" if a.engine == "snort"
+                     else "/data/rules/et-open-2026-10-19.rules")
 
     sched = json.load(open(a.schedule))
     os.makedirs(a.runs, exist_ok=True)

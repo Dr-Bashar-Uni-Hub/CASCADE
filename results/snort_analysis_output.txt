@@ -1,0 +1,31 @@
+Snort: 85 fitting, 25 held-out configurations; reference CPU mean 226.8 s (CV 2.8%)
+full configuration: macro window recall 0.432, CPU 227.4 s, startup 9.6 s, memory 515 MB, benign alerts 8673
+
+H7 interactions (pair at 0) - single losses:
+  K1-K2: I = +0.089  (pair 0.341, singles 0.341, 0.343, full 0.432)
+  K1-K6: I = +0.085  (pair 0.341, singles 0.341, 0.346, full 0.432)
+  K2-K6: I = +0.085  (pair 0.343, singles 0.343, 0.346, full 0.432)
+  other pairs with |I| > 0.02: ['K7-K11 -0.044']
+  H7 supported: True
+  single-factor losses: {'K1': np.float64(0.091), 'K2': np.float64(0.089), 'K3': np.float64(0.0), 'K4': np.float64(0.0), 'K5': np.float64(0.0), 'K6': np.float64(0.085), 'K7': np.float64(0.204), 'K8': np.float64(0.006), 'K9': np.float64(0.011), 'K10': np.float64(0.067), 'K11': np.float64(0.0)}
+
+H8 held-out mean absolute error (25 configurations):
+  additive                       0.0283 [0.0217, 0.0352]  max 0.059
+  CASCADE pre-registered form    0.0361 [0.0236, 0.0504]  max 0.127
+  CASCADE with level curves      0.0100 [0.0048, 0.0160]  max 0.041
+  random forest                  0.0412 [0.0278, 0.0557]  max 0.140
+  gradient boosting              0.0150 [0.0093, 0.0216]  max 0.058
+  paired additive - CASCADE(curves): +0.0183 [+0.0105, +0.0257]
+  paired gradient boosting - CASCADE(curves): +0.0050 [-0.0008, +0.0106]
+  H8 supported: True
+
+H9 fitted dependency strengths:
+  level curves (H8 model): K1->K2 1.00, K2->K6 0.99 | b0 0.043 | weights {'K1': np.float64(0.003), 'K2': np.float64(0.004), 'K6': np.float64(0.085), 'K7': np.float64(0.208), 'K8': np.float64(0.006), 'K9': np.float64(0.012), 'K10': np.float64(0.067), 'K11': np.float64(0.004)}
+  pre-registered form: K1->K2 0.96, K1->K5 0.07, K2->K6 0.95, K1->K8 0.17, K3->K8 0.19, K3->K9 0.20, K4->K9 0.19 | b0 0.000 | weights {'K1': np.float64(0.004), 'K2': np.float64(0.015), 'K5': np.float64(0.006), 'K6': np.float64(0.084), 'K7': np.float64(0.211), 'K8': np.float64(0.014), 'K9': np.float64(0.02), 'K10': np.float64(0.076), 'K11': np.float64(0.011)}
+  H9 supported: True
+
+Cost (exploratory) held-out MAE:
+  additive (one-hot)     7.6 s
+  gradient boosting      4.9 s
+  dependency-aware       4.6 s (2.4%); bias -2.6 s
+  cost of each capability switched off alone: {'K1': np.float64(21.9), 'K2': np.float64(8.1), 'K3': np.float64(2.8), 'K4': np.float64(3.4), 'K5': np.float64(1.7), 'K6': np.float64(0.6), 'K7': np.float64(-1.0), 'K8': np.float64(4.4), 'K9': np.float64(16.2), 'K10': np.float64(2.3), 'K11': np.float64(4.1)}

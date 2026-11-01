@@ -1,0 +1,130 @@
+{
+ "_note": "Snort 3.12.4.0 capabilities (protocol v1.4). K1 is on/off for Snort (track_only): the graded queue_limit levels changed no detection in the pilot and are not used in the schedule. Inspectors are switched off by removing their binder entries.",
+ "K1": {
+  "name": "stream reassembly",
+  "kind": "lua",
+  "levels": {
+   "0": {
+    "set": [
+     "stream_tcp.track_only = true"
+    ]
+   },
+   "0.2": {
+    "set": [
+     "stream_tcp.queue_limit = { max_bytes = 512 }"
+    ]
+   },
+   "0.4": {
+    "set": [
+     "stream_tcp.queue_limit = { max_bytes = 2048 }"
+    ]
+   },
+   "0.6": {
+    "set": [
+     "stream_tcp.queue_limit = { max_bytes = 8192 }"
+    ]
+   },
+   "0.8": {
+    "set": [
+     "stream_tcp.queue_limit = { max_bytes = 32768 }"
+    ]
+   },
+   "1": {}
+  }
+ },
+ "K2": {
+  "name": "HTTP inspector",
+  "kind": "lua",
+  "levels": {
+   "0": {
+    "drop_inspectors": [
+     "http_inspect"
+    ]
+   },
+   "1": {}
+  }
+ },
+ "K3": {
+  "name": "TLS inspector",
+  "kind": "lua",
+  "levels": {
+   "0": {
+    "drop_inspectors": [
+     "ssl"
+    ]
+   },
+   "1": {}
+  }
+ },
+ "K4": {
+  "name": "DNS inspector",
+  "kind": "lua",
+  "levels": {
+   "0": {
+    "drop_inspectors": [
+     "dns"
+    ]
+   },
+   "1": {}
+  }
+ },
+ "K5": {
+  "name": "SSH and FTP inspectors",
+  "kind": "lua",
+  "levels": {
+   "0": {
+    "drop_inspectors": [
+     "ssh",
+     "ftp_server",
+     "ftp_data"
+    ]
+   },
+   "1": {}
+  }
+ },
+ "K6": {
+  "name": "web-attack rules",
+  "kind": "rules",
+  "categories": [
+   "WEB_SERVER",
+   "WEB_SPECIFIC_APPS"
+  ]
+ },
+ "K7": {
+  "name": "scan rules",
+  "kind": "rules",
+  "categories": [
+   "SCAN"
+  ]
+ },
+ "K8": {
+  "name": "exploit rules",
+  "kind": "rules",
+  "categories": [
+   "EXPLOIT"
+  ]
+ },
+ "K9": {
+  "name": "malware and C2 rules",
+  "kind": "rules",
+  "categories": [
+   "TROJAN",
+   "MALWARE",
+   "CNC"
+  ]
+ },
+ "K10": {
+  "name": "DoS rules",
+  "kind": "rules",
+  "categories": [
+   "DOS"
+  ]
+ },
+ "K11": {
+  "name": "low-confidence rules",
+  "kind": "rules",
+  "categories": [
+   "INFO"
+  ]
+ }
+}

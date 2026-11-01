@@ -91,3 +91,11 @@ matched alerts; the 60 s column must reproduce week.json exactly (the script rep
     python3 main_batch.py $V2 --mode cost --until 10:00   # those 4 + re-measure of all 25, one session
 
 Items marked cost_only are re-measurements of the phase 5 configurations; they get no detection runs.
+
+## Phase 6 (protocol amendment v1.3, pre-registered): uncertainty-aware optimiser
+
+    cp verify3_schedule.json /data/config/verify3_schedule.json
+    sha256sum /data/config/verify3_schedule.json       # must start with 84b3c8a63203
+    V3="--schedule /data/config/verify3_schedule.json --runs /data/runs/verify3"
+    python3 main_batch.py $V3 --mode detection          # 11 new configurations, laptop usable
+    python3 main_batch.py $V3 --mode cost --until 10:00 # 15 configurations + 3 references, laptop untouched

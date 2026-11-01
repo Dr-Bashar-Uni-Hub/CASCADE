@@ -15,7 +15,7 @@ CIC-IDS2017 packet captures from the Canadian Institute for Cybersecurity (Unive
 Corrected flow labels of Liu, Engelen, Lynar, Essam and Joosen, "Error Prevalence in NIDS datasets: A Case Study on CIC-IDS-2017 and CSE-CIC-IDS-2018", IEEE CNS 2022 (`CICIDS2017_improved.zip`, downloaded 21 Oct 2026 from the authors' site).
 
 ## Ruleset
-Emerging Threats Open for Suricata 7.0.3, snapshot of 19 Oct 2026, 53,150 enabled rules, SHA-256 6c051c4c137058938bea64524207addf7049cc76109f8f8397f0b0edc886569b. The snapshot is included in the Zenodo archive, because a fresh download will differ.
+Emerging Threats Open for Suricata 7.0.3, snapshot of 19 Oct 2026, 53,150 enabled rules, SHA-256 6c051c4c137058938bea64524207addf7049cc76109f8f8397f0b0edc886569b. A fresh download will differ; the exact snapshot is available from the author on reasonable request.
 
 ## Base configuration
 Ubuntu default `suricata.yaml` modified by `harness/prepare_base.py` (HOME_NET = 192.168.10.0/24, alerts and stats only); SHA-256 of the result 1286e2fd84bb8535bed1d69e1dedf006585e96aa58fe8a58099774f176d67d55.
