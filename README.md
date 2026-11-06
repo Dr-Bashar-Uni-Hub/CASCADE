@@ -13,6 +13,7 @@ This repository contains everything behind the study: the measurement harness fo
 | Suricata 7 and Snort 3 share the dependency chain stream reassembly → HTTP inspection → web-attack rules | Fitted strengths 0.92-0.96; interactions +0.085 to +0.14 (H1, H7, H9) | Supported, pre-registered |
 | A structural dependency model has the lowest observed prediction error; clearly ahead of additive and regression baselines, narrowly ahead of gradient boosting (not statistically established on Snort) | Held-out MAE 0.011 (Suricata), 0.010 (Snort); 0.003 on 40 optimised configurations verified in Suricata (H2, H8) | Supported, pre-registered |
 | Model-based optima are flat; cheaper near-optimal configurations exist within the model's error | Audit of the fitted models; phase 5 verification | Established |
+| Decision quality tracks prediction accuracy: tie-rule choices with an additive model lose recall, gradient boosting matches the structural model | Phase 7 (H10 supported, H11 not supported, H12 supported) | Pre-registered |
 | Robust selection (cheapest within error; chance constraint) | Tie rule saved 11.3 / 5.6 CPU points at 90% / 80% with <= 0.006 recall loss (H5, H6); chance constraint missed the 70% budget by < 1 point (H4) | Partly supported, pre-registered |
 | Dependency awareness gives more detection than a dependency-unaware optimiser at tight budgets | H3 | Not supported |
 
@@ -42,6 +43,7 @@ The full per-run records (about 1 GB per engine) and the ruleset snapshots are a
     python3 compare.py        # Suricata: structural model vs baselines
     python3 audit2.py         # optimisation audit (flat optimum)
     python3 phase6.py         # pre-registered robust selection (H4-H6)
+    python3 decision_test.py  # phase 7 choices with additive and gradient-boosting models (H10-H12)
     python3 snort_analysis.py # Snort replication (H7-H9) and baselines
     python3 figs_v1.py        # manuscript figures
 

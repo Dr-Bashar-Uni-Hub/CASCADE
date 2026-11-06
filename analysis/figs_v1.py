@@ -18,7 +18,7 @@ st=[("1. Pilot","Rules fixed;\nprotocol frozen","#dbe8f6"),
     ("2. Suricata","150 configs:\n110 fit, 40 held out","#d9eedb"),
     ("3. Models","Structural vs.\nadditive and\nstatistical models","#fbefd0"),
     ("4. Configuration","1.5 M candidates;\naudit;\nrobust rules","#fbe0cc"),
-    ("5. Verification","40 configs run\nin Suricata\n(phases 5, 5b, 6)","#e6e0f3"),
+    ("5. Verification","56 configs run\nin Suricata\n(phases 5 to 7)","#e6e0f3"),
     ("6. Snort 3","110 configs:\nreplication\n(H7-H9)","#f6dcdc")]
 w,g=1.06,0.17
 for i,(t,s_,c) in enumerate(st):

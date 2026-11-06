@@ -1,0 +1,421 @@
+{
+ "choices": {
+  "additive|60|chance+tie": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.0
+   },
+   "measured_as": null,
+   "pred_cpu": 52.8,
+   "pred_self": 0.477,
+   "pred_struct": 0.417
+  },
+  "additive|60|tie": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.0
+   },
+   "measured_as": null,
+   "pred_cpu": 52.8,
+   "pred_self": 0.484,
+   "pred_struct": 0.417
+  },
+  "additive|60|tie@0.005": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 53.9,
+   "pred_self": 0.51,
+   "pred_struct": 0.43
+  },
+  "additive|70|chance+tie": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "measured_as": null,
+   "pred_cpu": 53.2,
+   "pred_self": 0.502,
+   "pred_struct": 0.426
+  },
+  "additive|70|tie": {
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.0
+   },
+   "measured_as": null,
+   "pred_cpu": 66.7,
+   "pred_self": 0.586,
+   "pred_struct": 0.542
+  },
+  "additive|70|tie@0.005": {
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.5,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 68.0,
+   "pred_self": 0.609,
+   "pred_struct": 0.554
+  },
+  "additive|80|chance+tie": {
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "measured_as": null,
+   "pred_cpu": 67.6,
+   "pred_self": 0.604,
+   "pred_struct": 0.551
+  },
+  "additive|80|tie": {
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 67.8,
+   "pred_self": 0.608,
+   "pred_struct": 0.554
+  },
+  "additive|80|tie@0.005": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 71.6,
+   "pred_self": 0.636,
+   "pred_struct": 0.573
+  },
+  "additive|90|chance+tie": {
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 67.8,
+   "pred_self": 0.608,
+   "pred_struct": 0.554
+  },
+  "additive|90|tie": {
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 67.8,
+   "pred_self": 0.608,
+   "pred_struct": 0.554
+  },
+  "additive|90|tie@0.005": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 71.6,
+   "pred_self": 0.636,
+   "pred_struct": 0.573
+  },
+  "gradient boosting|60|chance+tie": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 53.2,
+   "pred_self": 0.476,
+   "pred_struct": 0.425
+  },
+  "gradient boosting|60|tie": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 53.2,
+   "pred_self": 0.476,
+   "pred_struct": 0.425
+  },
+  "gradient boosting|60|tie@0.005": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 53.2,
+   "pred_self": 0.483,
+   "pred_struct": 0.426
+  },
+  "gradient boosting|70|chance+tie": {
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 53.2,
+   "pred_self": 0.476,
+   "pred_struct": 0.425
+  },
+  "gradient boosting|70|tie": {
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 67.8,
+   "pred_self": 0.568,
+   "pred_struct": 0.553
+  },
+  "gradient boosting|70|tie@0.005": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.0
+   },
+   "measured_as": null,
+   "pred_cpu": 69.7,
+   "pred_self": 0.571,
+   "pred_struct": 0.559
+  },
+  "gradient boosting|80|chance+tie": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "measured_as": null,
+   "pred_cpu": 70.7,
+   "pred_self": 0.578,
+   "pred_struct": 0.568
+  },
+  "gradient boosting|80|tie": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "measured_as": null,
+   "pred_cpu": 70.7,
+   "pred_self": 0.578,
+   "pred_struct": 0.568
+  },
+  "gradient boosting|80|tie@0.005": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "measured_as": null,
+   "pred_cpu": 70.7,
+   "pred_self": 0.582,
+   "pred_struct": 0.568
+  },
+  "gradient boosting|90|chance+tie": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "measured_as": null,
+   "pred_cpu": 70.7,
+   "pred_self": 0.578,
+   "pred_struct": 0.568
+  },
+  "gradient boosting|90|tie": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "measured_as": null,
+   "pred_cpu": 70.7,
+   "pred_self": 0.578,
+   "pred_struct": 0.568
+  },
+  "gradient boosting|90|tie@0.005": {
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "measured_as": null,
+   "pred_cpu": 70.9,
+   "pred_self": 0.586,
+   "pred_struct": 0.571
+  }
+ },
+ "note": "Phase 7 choices, frozen before any run. Structural choices are the phase-6 choices (epsilon 0.005); additive and gradient-boosting choices use epsilon = half each model's held-out MAE (0.0345, 0.0105) and, secondarily, 0.005; cost model and chance margin as in frozen_models_v1_3.json."
+}
