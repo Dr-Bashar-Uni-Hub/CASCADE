@@ -1,0 +1,270 @@
+{
+ "protocol": "CASCADE-IDS protocol v1.4, bug-fix re-run of configurations with K1=0 and an inspector off",
+ "engine": "snort",
+ "items": [
+  {
+   "id": "SRR01",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC049",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K3": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC059",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K4": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC069",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K2": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC085",
+   "type": "config",
+   "phase": 3,
+   "held_out": false,
+   "levels": {
+    "K1": 0,
+    "K5": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC088",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K4": 0,
+    "K6": 0.25,
+    "K7": 0.25,
+    "K8": 0.25,
+    "K9": 0,
+    "K10": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC089",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K4": 0,
+    "K5": 0,
+    "K7": 0.5,
+    "K8": 0.75,
+    "K9": 0,
+    "K10": 0.25,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC091",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K3": 0,
+    "K6": 0.75,
+    "K8": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC093",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K5": 0,
+    "K6": 0.5,
+    "K8": 0.75,
+    "K9": 0,
+    "K10": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SRR02",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "SC095",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K4": 0,
+    "K7": 0,
+    "K8": 0.25,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC096",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K4": 0,
+    "K6": 0.25,
+    "K8": 0.25,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC101",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K3": 0,
+    "K7": 0,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC102",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K4": 0,
+    "K6": 0.5,
+    "K8": 0,
+    "K9": 0.25,
+    "K10": 0,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC103",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K4": 0,
+    "K6": 0.5,
+    "K7": 0,
+    "K8": 0.5,
+    "K9": 0.25,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC104",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K10": 0.25,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC106",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K3": 0,
+    "K6": 0.75,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  },
+  {
+   "id": "SC109",
+   "type": "config",
+   "phase": 4,
+   "held_out": true,
+   "levels": {
+    "K1": 0,
+    "K2": 0,
+    "K3": 0,
+    "K5": 0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0,
+    "K9": 0.5,
+    "K11": 0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2
+  }
+ ]
+}

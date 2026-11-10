@@ -1,58 +1,101 @@
-# CASCADE
+# CASCADE-IDS run harness
 
-**Component dependencies in signature-based intrusion detection: measurement, modelling and robust configuration under CPU budgets, in Suricata and Snort.**
+Runs ONE Suricata configuration offline and records cost and alerts. Implements
+protocol v0.1 sections 2, 4 and 5.
 
-This repository contains everything behind the study: the measurement harness for two engines, the pre-registered protocol with all amendments and deviations, the frozen schedules and models, the per-configuration results, and the analysis and figure scripts.
+## One-time setup on the VM
 
-> Manuscript under review. Please cite the paper once published (see `CITATION.cff`).
+    mkdir -p /data/harness /data/config /data/runs /data/manifests
+    cp run_config.py prepare_base.py levels.json /data/harness/
+    cd /data/harness
+    python3 prepare_base.py /etc/suricata/suricata.yaml /data/config/base_suricata.yaml \
+        | tee /data/manifests/base_yaml.sha256
 
-## Main findings
+## Self-test (before the real dataset arrives)
 
-| Finding | Evidence | Status |
-|---|---|---|
-| Suricata 7 and Snort 3 share the dependency chain stream reassembly → HTTP inspection → web-attack rules | Fitted strengths 0.92-0.96; interactions +0.085 to +0.14 (H1, H7, H9) | Supported, pre-registered |
-| A structural dependency model has the lowest observed prediction error; clearly ahead of additive and regression baselines, narrowly ahead of gradient boosting (not statistically established on Snort) | Held-out MAE 0.011 (Suricata), 0.010 (Snort); 0.003 on 40 optimised configurations verified in Suricata (H2, H8) | Supported, pre-registered |
-| Model-based optima are flat; cheaper near-optimal configurations exist within the model's error | Audit of the fitted models; phase 5 verification | Established |
-| Decision quality tracks prediction accuracy: tie-rule choices with an additive model lose recall, gradient boosting matches the structural model | Phase 7 (H10 supported, H11 not supported, H12 supported) | Pre-registered |
-| Robust selection (cheapest within error; chance constraint) | Tie rule saved 11.3 / 5.6 CPU points at 90% / 80% with <= 0.006 recall loss (H5, H6); chance constraint missed the 70% budget by < 1 point (H4) | Partly supported, pre-registered |
-| Dependency awareness gives more detection than a dependency-unaware optimiser at tight budgets | H3 | Not supported |
+Uses the synthetic traffic from the earlier suricata_feasibility package.
+With the real ET ruleset, the synthetic attacks may trigger few or no ET rules;
+the test only checks that the harness runs end to end.
 
-## Repository layout
+    cd ~/suricata_feasibility && python3 make_pcap.py
+    tcpdump -r traffic.pcap -c 50 -w tiny.pcap
+    cd /data/harness
+    python3 run_config.py --config examples/full.json --pcap ~/suricata_feasibility/traffic.pcap \
+        --out /data/runs/selftest/full --startup-pcap ~/suricata_feasibility/tiny.pcap
+    python3 run_config.py --config examples/red.json --pcap ~/suricata_feasibility/traffic.pcap \
+        --out /data/runs/selftest/red --startup-pcap ~/suricata_feasibility/tiny.pcap
 
-| Folder | Contents |
-|---|---|
-| `protocol/` | Pre-registered measurement protocol (v1.4) with all amendments, deviations, results and hashes |
-| `harness/` | Suricata measurement harness, batch runner (`main_batch.py --engine suricata|snort`), label matching, week scoring, window re-analysis |
-| `snort/` | Snort 3 harness port, levels, schedules and pilot scripts |
-| `schedules/` | Frozen Suricata schedules (main, verification, phases 5b and 6) and the frozen models of phase 6 |
-| `analysis/` | Model fitting, baselines, optimisation, audits, phase evaluations, Snort analysis, figures |
-| `results/` | Per-configuration results for both engines (see `results/README.md`) |
-| `figures/` | Manuscript figures (PNG 300 dpi and PDF) |
-| `docs/` | Data sources, hashes, environment, and how each table and figure is reproduced |
-| `legacy_synthetic/` | Earlier synthetic-graph notebooks; not used in the results |
+Each run prints a summary and writes run.json, alerts.csv, rules.rules and suricata.log.
+Exit code 0 = valid run, 1 = invalid (reasons in run.json "problems").
+If Suricata reports a permission error, prefix the command with sudo.
 
-The full per-run records (about 1 GB per engine) and the ruleset snapshots are available from the author on reasonable request.
+## Behaviour worth knowing
 
-## Reproducing the analysis (no IDS needed)
+- Capabilities not listed in a config run at full level (1).
+- Rule fractions are nested: with the same seed, the rules kept at 0.25 are a subset of those at 0.5.
+- Every `--set` key must already exist in the base config; a misspelled key stops the run
+  (Suricata itself would silently ignore it).
+- The harness refuses to overwrite an existing run directory.
+- Suricata pinned to vCPU 1 by default (`--cpu`).
+- Detection was deterministic across repeated runs in testing EXCEPT flow_id, which Suricata
+  randomises per run. Label matching must use the 5-tuple and timestamp, never flow_id.
+- K1/K2 level values and the rule-category lists in levels.json are provisional until the
+  pilot and the ruleset snapshot.
 
-    pip install -r requirements.txt
-    cd analysis
-    python3 costfit.py        # Suricata cost models (writes costA.npy, costC.npy)
-    python3 pc_fast.py        # per-class protection model
-    python3 fit.py            # Suricata protection models
-    python3 compare.py        # Suricata: structural model vs baselines
-    python3 audit2.py         # optimisation audit (flat optimum)
-    python3 phase6.py         # pre-registered robust selection (H4-H6)
-    python3 decision_test.py  # phase 7 choices with additive and gradient-boosting models (H10-H12)
-    python3 snort_analysis.py # Snort replication (H7-H9) and baselines
-    python3 figs_v1.py        # manuscript figures
+## Label matching (label_match.py)
 
-See `docs/REPRODUCE.md` for the mapping from each table and figure to its script and data.
+Maps each alert of a run to a labeled flow in the CIC-IDS2017 improved labels
+(Liu, Engelen et al., CNS 2022) and writes matched_alerts.csv and detection.json into the run folder.
 
-## Reproducing the measurements
+    # first run on each day: find the label clock offset (expect one offset to match far better)
+    python3 label_match.py --labels /data/labels/thursday.csv --run /data/runs/phase0/P001 --check-offset
+    # then
+    python3 label_match.py --labels /data/labels/thursday.csv --run /data/runs/phase0/P001 --offset-hours <best>
 
-Requires Ubuntu 24.04, Suricata 7.0.3 and/or Snort 3.12.4.0 (DAQ 3.0.28, Hyperscan), Python 3.12 with pandas, the CIC-IDS2017 captures and corrected labels, and the ruleset snapshots (see `docs/DATA.md`). See `harness/README.md` and the protocol for the procedure, measurement-control rules and seeds.
+"Attempted" flows are excluded from recall and reported separately; alerts on them are
+not counted as false positives. Alerts matching no labeled flow are reported as unmatched.
 
-## License
+## Main study (protocol v1.1)
 
-Code: MIT (see `LICENSE`). CIC-IDS2017 and the Emerging Threats rulesets are not redistributed here and remain under their own terms.
+One-time setup:
+
+    cp main_schedule.json /data/config/main_schedule.json
+    sha256sum /data/config/main_schedule.json     # must match the hash in the protocol
+    python3 main_batch.py --status
+
+Daytime, while you work (detection, 3 runs in parallel on vCPUs 1-3; timing not used):
+
+    python3 main_batch.py --mode detection 2>&1 | tee -a /data/runs/main/console.log
+
+Evening, laptop untouched (CPU cost runs, one at a time, with disturbance check and retry):
+
+    python3 main_batch.py --mode cost --until 07:30 2>&1 | tee -a /data/runs/main/console.log
+
+Both modes resume where they stopped, redo an interrupted run from scratch, and log to
+/data/runs/main/progress.log. Only one mode can run at a time (a lock file enforces it), so
+stop detection with Ctrl+C before starting cost runs in the evening.
+make_schedule.py regenerates the identical schedule from its fixed seeds (for audit only).
+
+## Window-length sensitivity (re-analysis, no Suricata runs)
+
+    python3 window_sensitivity.py --runs /data/runs/main /data/runs/verify --out /data/runs/window_sensitivity.csv
+
+Recomputes macro window recall for 30 s, 60 s, 120 s and 300 s windows from the existing
+matched alerts; the 60 s column must reproduce week.json exactly (the script reports the check).
+
+## Phase 5b (exploratory, protocol amendment v1.2)
+
+    cp verify2_schedule.json /data/config/verify2_schedule.json
+    V2="--schedule /data/config/verify2_schedule.json --runs /data/runs/verify2"
+    python3 main_batch.py $V2 --mode detection        # 4 new safety-margin configurations
+    python3 main_batch.py $V2 --mode cost --until 10:00   # those 4 + re-measure of all 25, one session
+
+Items marked cost_only are re-measurements of the phase 5 configurations; they get no detection runs.
+
+## Phase 6 (protocol amendment v1.3, pre-registered): uncertainty-aware optimiser
+
+    cp verify3_schedule.json /data/config/verify3_schedule.json
+    sha256sum /data/config/verify3_schedule.json       # must start with 84b3c8a63203
+    V3="--schedule /data/config/verify3_schedule.json --runs /data/runs/verify3"
+    python3 main_batch.py $V3 --mode detection          # 11 new configurations, laptop usable
+    python3 main_batch.py $V3 --mode cost --until 10:00 # 15 configurations + 3 references, laptop untouched

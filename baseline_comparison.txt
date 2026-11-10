@@ -1,0 +1,24 @@
+=== DETECTION (macro window recall); train 110, held-out 40, verified 29
+  Linear, one-hot levels (additive)  held-out MAE 0.0694 [0.0546,0.0851]  max 0.190   verified MAE 0.0515 bias +0.0232
+  Ridge, one-hot + pairwise          held-out MAE 0.0990 [0.0751,0.1247]  max 0.328   verified MAE 0.1038 bias -0.0911
+  Lasso, one-hot + pairwise          held-out MAE 0.0427 [0.0347,0.0509]  max 0.117   verified MAE 0.0174 bias -0.0004
+  Random forest                      held-out MAE 0.0278 [0.0193,0.0368]  max 0.105   verified MAE 0.0189 bias -0.0111
+  Gradient boosting                  held-out MAE 0.0213 [0.0155,0.0280]  max 0.094   verified MAE 0.0059 bias +0.0056
+  CASCADE pre-registered (21 par.)   held-out MAE 0.0249 [0.0198,0.0302]  max 0.071   verified MAE 0.0494 bias -0.0489
+  CASCADE + level curves (43 par.)   held-out MAE 0.0105 [0.0072,0.0141]  max 0.044   verified MAE 0.0028 bias -0.0012
+  paired: Ridge-pairwise minus CASCADE pre-reg  +0.0742 [+0.0492,+0.1008]
+  paired: Lasso-pairwise minus CASCADE curves   +0.0321 [+0.0243,+0.0405]
+
+=== COST (processing CPU, s, main-study scale); train 110, held-out 40, verified 29 (re-measured, rescaled)
+  Linear, one-hot levels (additive)  held-out MAE 6.3857 s [5.2835,7.6689]  max 16.709   verified MAE 5.3642 s bias -4.0626
+  Ridge, one-hot + pairwise          held-out MAE 14.4211 s [11.3221,17.8496]  max 51.700   verified MAE 9.9554 s bias +9.0705
+  Lasso, one-hot + pairwise          held-out MAE 5.8742 s [4.7097,7.1087]  max 15.673   verified MAE 4.4329 s bias +0.9922
+  Random forest                      held-out MAE 7.2327 s [6.0211,8.4505]  max 16.432   verified MAE 5.8379 s bias +5.5353
+  Gradient boosting                  held-out MAE 7.0785 s [5.8813,8.2822]  max 15.086   verified MAE 3.6852 s bias +2.5012
+  Additive cost model (paper)        held-out MAE 8.1253 s [6.0660,10.2827]  max 23.615   verified MAE 8.6812 s bias -8.6599
+  Dependency-aware cost model (paper) held-out MAE 2.9723 s [2.2324,3.7616]  max 8.896   verified MAE 3.7415 s bias -3.7402
+  paired: Ridge-pairwise minus dependency-aware  +11.449 s [+8.323,+14.797]
+  paired held-out: GBR minus CASCADE+curves +0.0108 [+0.0062,+0.0160]
+  paired verified: GBR minus CASCADE+curves +0.0031 [+0.0010,+0.0057]
+  paired cost held-out: GBR minus dependency-aware +4.106 s [+2.504,+5.726]
+  paired cost verified: GBR minus dependency-aware -0.056 s [-1.373,+1.277]

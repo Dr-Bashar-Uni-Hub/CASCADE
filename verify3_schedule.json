@@ -1,0 +1,370 @@
+{
+ "protocol": "CASCADE-IDS protocol v1.3: phase 6, uncertainty-aware optimiser (pre-registered)",
+ "order_seed": 20261028,
+ "items": [
+  {
+   "id": "UR01",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "U001",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.75,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "chance+tie @ 70%"
+   ]
+  },
+  {
+   "id": "U002",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "tie @ 70%"
+   ]
+  },
+  {
+   "id": "U003",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "plain @ 60%"
+   ]
+  },
+  {
+   "id": "U004",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "tie @ 80%"
+   ]
+  },
+  {
+   "id": "U005",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "tie @ 90%",
+    "chance+tie @ 90%"
+   ]
+  },
+  {
+   "id": "UR02",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "U006",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "chance+tie @ 80%"
+   ]
+  },
+  {
+   "id": "U007",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "plain @ 70%",
+    "anchor re-measure of V024"
+   ]
+  },
+  {
+   "id": "U008",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.75,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "chance+tie @ 60%"
+   ]
+  },
+  {
+   "id": "U009",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "chance @ 80%"
+   ]
+  },
+  {
+   "id": "U010",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K10": 0.25,
+    "K11": 0.75,
+    "K3": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "plain @ 90%"
+   ]
+  },
+  {
+   "id": "UR03",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "U011",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "chance @ 70%",
+    "anchor re-measure of W029"
+   ]
+  },
+  {
+   "id": "U012",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "plain @ 80%",
+    "anchor re-measure of V023"
+   ]
+  },
+  {
+   "id": "U013",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K10": 0.25,
+    "K11": 0.75,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "chance @ 90%",
+    "anchor re-measure of V019"
+   ]
+  },
+  {
+   "id": "U014",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "tie @ 60%"
+   ]
+  },
+  {
+   "id": "U015",
+   "type": "config",
+   "phase": "6",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "chance @ 60%"
+   ]
+  }
+ ]
+}

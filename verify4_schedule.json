@@ -1,0 +1,576 @@
+{
+ "protocol": "CASCADE-IDS protocol v1.5: phase 7, does the structural model matter for decisions (pre-registered)",
+ "order_seed": 20261103,
+ "items": [
+  {
+   "id": "DR01",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "D001",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive tie @ 90%",
+    "additive chance+tie @ 90%",
+    "additive tie @ 80%"
+   ]
+  },
+  {
+   "id": "D002",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "structural tie @ 80% (phase 6 U004)"
+   ]
+  },
+  {
+   "id": "D003",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive tie @ 70%"
+   ]
+  },
+  {
+   "id": "D004",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "structural tie @ 70% (phase 6 U002)"
+   ]
+  },
+  {
+   "id": "D005",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "gradient boosting tie @ 70%"
+   ]
+  },
+  {
+   "id": "D006",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "gradient boosting tie @ 90%",
+    "gradient boosting chance+tie @ 90%",
+    "gradient boosting tie @ 80%",
+    "gradient boosting chance+tie @ 80%"
+   ]
+  },
+  {
+   "id": "DR02",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "D007",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "structural chance+tie @ 80% (phase 6 U006)"
+   ]
+  },
+  {
+   "id": "D008",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive tie@0.005 @ 60%"
+   ]
+  },
+  {
+   "id": "D009",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.75,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "structural chance+tie @ 60% (phase 6 U008)"
+   ]
+  },
+  {
+   "id": "D010",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "structural tie @ 90% (phase 6 U005)",
+    "structural chance+tie @ 90% (phase 6 U005)"
+   ]
+  },
+  {
+   "id": "D011",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "gradient boosting chance+tie @ 70%",
+    "gradient boosting tie @ 60%",
+    "gradient boosting chance+tie @ 60%"
+   ]
+  },
+  {
+   "id": "D012",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "gradient boosting tie@0.005 @ 70%"
+   ]
+  },
+  {
+   "id": "DR03",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "D013",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "gradient boosting tie@0.005 @ 90%"
+   ]
+  },
+  {
+   "id": "D014",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "gradient boosting tie@0.005 @ 80%"
+   ]
+  },
+  {
+   "id": "D015",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.0,
+    "K11": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.25,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "gradient boosting tie@0.005 @ 60%"
+   ]
+  },
+  {
+   "id": "D016",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive chance+tie @ 60%"
+   ]
+  },
+  {
+   "id": "D017",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive tie@0.005 @ 90%",
+    "additive tie@0.005 @ 80%"
+   ]
+  },
+  {
+   "id": "D018",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "structural tie @ 60% (phase 6 U014)"
+   ]
+  },
+  {
+   "id": "DR04",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "D019",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive tie @ 60%"
+   ]
+  },
+  {
+   "id": "D020",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.75,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K6": 0.75,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": true,
+   "used_by": [
+    "structural chance+tie @ 70% (phase 6 U001)"
+   ]
+  },
+  {
+   "id": "D021",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive chance+tie @ 70%"
+   ]
+  },
+  {
+   "id": "D022",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.5,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive tie@0.005 @ 70%"
+   ]
+  },
+  {
+   "id": "D023",
+   "type": "config",
+   "phase": "7",
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K10": 0.25,
+    "K11": 0.25,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "cost_only": false,
+   "used_by": [
+    "additive chance+tie @ 80%"
+   ]
+  }
+ ]
+}

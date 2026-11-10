@@ -1,0 +1,517 @@
+{
+ "protocol": "CASCADE-IDS Measurement Protocol v1.1, phase 5 verification",
+ "order_seed": 20261025,
+ "items": [
+  {
+   "id": "VR01",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "V001",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dep-aware optimum (per-class) @ 90%"
+   ]
+  },
+  {
+   "id": "V002",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K6": 0.0,
+    "K7": 0.0,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K10": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "rules first @ 80%"
+   ]
+  },
+  {
+   "id": "V003",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K4": 0.0,
+    "K8": 0.5,
+    "K9": 0.25
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dep-aware optimum (per-class) @ 80%"
+   ]
+  },
+  {
+   "id": "V004",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.4,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "CASCADE V2 heuristic @ 70%"
+   ]
+  },
+  {
+   "id": "V005",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K2": 0.0,
+    "K3": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "most expensive first @ 80%"
+   ]
+  },
+  {
+   "id": "V006",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K6": 0.0,
+    "K7": 0.0,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K10": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "rules first @ 70%",
+    "rules first @ 60%"
+   ]
+  },
+  {
+   "id": "V007",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K6": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dep-aware optimum (per-class) @ 60%"
+   ]
+  },
+  {
+   "id": "V008",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-unaware optimum @ 100%",
+    "dependency-unaware optimum @ 90%",
+    "dependency-unaware optimum @ 80%"
+   ]
+  },
+  {
+   "id": "V009",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K9": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "most expensive first @ 60%"
+   ]
+  },
+  {
+   "id": "V010",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.75,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "CASCADE V2 heuristic @ 60%"
+   ]
+  },
+  {
+   "id": "VR02",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "V011",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K2": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "most expensive first @ 90%"
+   ]
+  },
+  {
+   "id": "V012",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-aware optimum @ 100%"
+   ]
+  },
+  {
+   "id": "V013",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-unaware optimum @ 60%"
+   ]
+  },
+  {
+   "id": "V014",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.8,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "most expensive first @ 70%"
+   ]
+  },
+  {
+   "id": "V015",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-unaware optimum @ 50%"
+   ]
+  },
+  {
+   "id": "V016",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K6": 0.0,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "rules first @ 90%"
+   ]
+  },
+  {
+   "id": "V017",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.75,
+    "K9": 0.75,
+    "K10": 0.75,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "CASCADE V2 heuristic @ 80%"
+   ]
+  },
+  {
+   "id": "V018",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-unaware optimum @ 40%"
+   ]
+  },
+  {
+   "id": "V019",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-aware optimum @ 90%"
+   ]
+  },
+  {
+   "id": "V020",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.5
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-unaware optimum @ 70%"
+   ]
+  },
+  {
+   "id": "VR03",
+   "type": "reference",
+   "levels": {},
+   "rule_seed": 20261019
+  },
+  {
+   "id": "V021",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.0,
+    "K2": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-aware optimum @ 60%"
+   ]
+  },
+  {
+   "id": "V022",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K3": 0.0,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.75,
+    "K9": 0.75,
+    "K10": 0.75,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "CASCADE V2 heuristic @ 90%"
+   ]
+  },
+  {
+   "id": "V023",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K4": 0.0,
+    "K7": 0.75,
+    "K8": 0.25,
+    "K9": 0.75,
+    "K10": 0.25,
+    "K11": 0.75
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-aware optimum @ 80%"
+   ]
+  },
+  {
+   "id": "V024",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.0,
+    "K9": 0.0,
+    "K10": 0.25,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dependency-aware optimum @ 70%"
+   ]
+  },
+  {
+   "id": "V025",
+   "type": "config",
+   "phase": 5,
+   "held_out": false,
+   "levels": {
+    "K1": 0.6,
+    "K3": 0.0,
+    "K4": 0.0,
+    "K5": 0.0,
+    "K7": 0.75,
+    "K8": 0.5,
+    "K9": 0.0,
+    "K11": 0.0
+   },
+   "rule_seed": 20261019,
+   "extra_cost_reps": 2,
+   "used_by": [
+    "dep-aware optimum (per-class) @ 70%"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.npy
+*.pcap
+*.pcapng
+/data/
+runs/
+labels/*.csv
+*.tar.gz
